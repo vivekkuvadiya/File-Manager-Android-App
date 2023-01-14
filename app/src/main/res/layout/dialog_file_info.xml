@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/dialog_bg"
+            app:cardCornerRadius="12dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/tv_file_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/itc_avant_garde_std_demi"
+                    android:text="File"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_file_name">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="2"
+                            android:textSize="16sp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/itc_avant_garde_std_md"
+                            android:textColor="#99FFFFFF"
+                            android:text="Location : "/>
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:textColor="#99FFFFFF"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/itc_avant_garde_std_md"
+                            android:layout_height="wrap_content"
+                            android:text="Date : "/>
+
+                        <TextView
+                            android:id="@+id/size"
+                            android:layout_width="match_parent"
+                            android:textColor="#99FFFFFF"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/itc_avant_garde_std_md"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Size : "/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:lines="2"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/itc_avant_garde_std_md"
+                            android:textColor="@color/white"
+                            android:text="Storage/Emulatd/Fold/fefjf.jpj"/>
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/itc_avant_garde_std_md"
+                            android:textColor="@color/white"
+                            android:layout_marginBottom="5dp"
+                            android:text="5145/5445/474"/>
+
+                        <TextView
+                            android:id="@+id/tv_size"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:lines="1"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/itc_avant_garde_std_md"
+                            android:textColor="@color/white"
+                            android:text="25.25 MB"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/blue_btn_bg"
+                    android:text="OK"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+</layout>
