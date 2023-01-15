@@ -11,7 +11,7 @@ A file manager app built using Java language that allows users to manage various
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/<username>/file-explorer-app.git`
-2. Import the project into your preferred Java development environment.
+2. Import the project into your Android Studio.
 3. Build and run the project.
 
 ## Usage
