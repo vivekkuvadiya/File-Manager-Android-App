@@ -2,6 +2,10 @@
 
 A file manager app built using Java language that allows users to manage various types of files including Images, Audio, Video, Zip, Apps, Documents, Downloads, Favorite Files, and Large Files. The app includes features such as file management, organization, and categorization.
 
+## Demo
+
+https://user-images.githubusercontent.com/65214194/215809528-bcbf4ecf-93e5-4fc2-8f8a-5ebaf028b384.mp4
+
 ## Features
 - File management: Users can view, organize, and manage their files easily.
 - Categorization: Files are automatically categorized into different types, such as Images, Audio, Video, etc.
